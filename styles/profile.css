@@ -17,6 +17,8 @@ nav {
     padding: 10px 0;
 }
 
+.navbar-nav{padding-left: 0%;}
+
 nav .container {
     display: flex;
     justify-content: space-between;
@@ -230,15 +232,30 @@ footer {
 
 /* Media Queries */
 @media (max-width: 768px) {
+    nav .container {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .nav-item {
+        margin-left: 0; 
+        margin-bottom: 10px; 
+    }
+
+    main {
+        text-align: center;
+    }
+
     .member {
         width: 100%;
-        max-width: 400px;
+        max-width: 100%; 
     }
+
     .profile-card,
     .skills-card,
     .certifications-card,
     .projects-card {
-        width: 100%;
-        max-width: 400px;
+        width: 100%; 
+        max-width: 100%;
     }
 }
